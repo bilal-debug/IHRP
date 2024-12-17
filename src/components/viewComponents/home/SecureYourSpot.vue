@@ -1,6 +1,5 @@
 <script setup>
 import SpotButton from "@/components/commonComponents/buttons/SpotButton.vue";
-
 </script>
 <template>
   <div class="bg-gray-200 mt-[90px]">
@@ -22,5 +21,4 @@ import SpotButton from "@/components/commonComponents/buttons/SpotButton.vue";
       </p>
     </div>
   </div>
-  
 </template>
