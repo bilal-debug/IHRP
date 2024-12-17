@@ -22,10 +22,12 @@ const chokas_mokas = [
 ];
 </script>
 <template>
-  <div class="flex md:flex-row flex-col-reverse items-center mt-9">
+  <div class="grid grid-cols-1 md:grid-cols-2 place-items-center mt-9">
     <div><img src="../../../assets/images/guesofhonour.png" alt="" /></div>
     <div class="">
-      <div class="text-[40px] md:mx-32 mx-2 text-center md:text-start">
+      <div
+        class="text-[40px] mt-8 md:mt-0 md:mx-32 mx-2 text-center md:text-start"
+      >
         <span class="text-orange-600 font-bold"
           >Why you should <br />
           Attend PBP

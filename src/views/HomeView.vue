@@ -10,6 +10,11 @@ import SecureYourSpot from "@/components/viewComponents/home/SecureYourSpot.vue"
   <Banner />
   <PeopleBehindPeople />
   <GuestOfHonour />
-  <SecureYourSpot />
-  <Footer />
+  <div
+    class="bg-[url('./src/assets/images/footer.png')] bg-no-repeat"
+    style="background-size: 100% 100%"
+  >
+    <SecureYourSpot />
+    <Footer />
+  </div>
 </template>

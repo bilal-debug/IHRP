@@ -1,8 +1,7 @@
 <script setup></script>
 <template>
   <div
-    class="bg-[url('./src/assets/images/footer.png')] bg-no-repeat md:grid grid-cols-3 md:pt-24 pt-10 text-center md:text-white text-black"
-    style="background-size: 100% 100%"
+    class="md:grid grid-cols-3 md:pt-24 pt-10 text-center md:text-white text-black"
   >
     <div class="">
       <p class="md:text-end mt-5 md:mt-0">

@@ -2,16 +2,14 @@
 import SpotButton from "@/components/commonComponents/buttons/SpotButton.vue";
 </script>
 <template>
-  <div class="bg-gray-200 mt-[90px]">
-    <div class="md:flex justify-center">
-      <div
-        class="bg-white py-3 px-14 rounded-[80px] shadow-gray-500 border my-[-30px]"
-        style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
-      >
-        <h2 class="md:text-[34px] font-bold">SECURE YOUR SPOT TODAY!</h2>
-      </div>
+  <div class="mt-[90px] relative">
+    <div
+      class="bg-white py-3 px-14 rounded-[80px] shadow-gray-500 border absolute -translate-y-1/2 left-1/2 -translate-x-1/2 min-w-max"
+      style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+    >
+      <h2 class="md:text-[34px] font-bold">SECURE YOUR SPOT TODAY!</h2>
     </div>
-    <div class="mt-[60px]">
+    <div class="pt-[3em]">
       <SpotButton />
     </div>
     <div class="mt-[30px]">
