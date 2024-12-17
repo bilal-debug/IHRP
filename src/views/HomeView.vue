@@ -8,7 +8,7 @@ import SecureYourSpot from "@/components/viewComponents/home/SecureYourSpot.vue"
 </script>
 
 <template>
-  <!-- <Banner/> -->
+  <Banner />
   <PeopleBehindPeople />
   <GuestOfHonour />
   <SecureYourSpot />
