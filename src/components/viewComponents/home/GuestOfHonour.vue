@@ -19,6 +19,11 @@ const chokas_mokas = [
     description:
       "Network with Business and HR leaders, industry thought leaders, and like-minded professionals dedicated to uplifting human capital and delivering business outcomes.",
   },
+  {
+    label: "Transformative Content",
+    description:
+      "Engage in panel discussions and interactive sessions designed to equip you with the tools and knowledge to boost productivity and drive growthwith your organisation.",
+  },
 ];
 </script>
 <template>
@@ -44,7 +49,7 @@ const chokas_mokas = [
     </div>
   </div>
 
-  <div class="md:flex gap-4 md:mx-32 mx-2 mt-[80px]">
+  <div class="md:flex gap-1 md:mx-32 mx-2 mt-[80px]">
     <div v-for="(item, index) in chokas_mokas" :key="index">
       <InfoCard :info="item" />
     </div>

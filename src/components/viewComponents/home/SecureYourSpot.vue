@@ -1,5 +1,21 @@
 <script setup>
 import SpotButton from "@/components/commonComponents/buttons/SpotButton.vue";
+
+const buttons = [
+  {
+    name: "IHRP Certified Community",
+    color: "bg-orange-500",
+    link: "/ihrp-certified-cummunity/registration",
+  },
+  {
+    name: "Partners",
+    color: "bg-blue-500",
+  },
+  {
+    name: "Public",
+    color: "bg-green-500",
+  },
+];
 </script>
 <template>
   <div class="mt-[90px] relative">
@@ -9,8 +25,12 @@ import SpotButton from "@/components/commonComponents/buttons/SpotButton.vue";
     >
       <h2 class="md:text-[34px] font-bold">SECURE YOUR SPOT TODAY!</h2>
     </div>
-    <div class="pt-[3em]">
-      <SpotButton />
+    <div
+      class="grid gap-3 md:mx-32 mx-2 grid-cols-1 md:grid-cols-3 pt-20 place-items-center"
+    >
+      <div class="w-full" v-for="(button, index) in buttons" :key="index">
+        <SpotButton :info="button" />
+      </div>
     </div>
     <div class="mt-[30px]">
       <p class="text-center text-[18px] font-semibold">

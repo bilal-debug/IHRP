@@ -3,14 +3,14 @@ const props = defineProps(["info"]);
 </script>
 <template>
   <div
-    class="border border-orange-200 rounded-bl-[20px] p-2 rounded-tr-[20px] mt-8 md:mt-0"
+    class="border border-orange-200 rounded-bl-[20px] p-2 rounded-tr-[20px] mt-8 md:mt-0 h-full"
   >
     <div class="bg-orange-100 p-9 rounded-bl-[20px] rounded-tr-[20px] h-full">
       <div></div>
       <div class="font-bold text-orange-400">
         {{ info.label }}
       </div>
-      <div class="border-b w-[40%] border-gray-400 mt-2" />
+      <div class="border-b border-gray-400 mt-2" />
       <div class="mt-2">
         {{ info.description }}
       </div>

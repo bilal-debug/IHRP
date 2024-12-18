@@ -29,7 +29,7 @@ function onToggleMenu() {
         <li><a href="">Getting TO MBS</a></li>
       </ul>
     </div>
-    <div class="flex items-center md:hidden justify-end text-white">
+    <div class="flex items-center md:hidden justify-end pr-4 pt-4 text-white">
       <ion-icon @click="onToggleMenu()" id="ion-icon" name="menu"></ion-icon>
     </div>
   </nav>
