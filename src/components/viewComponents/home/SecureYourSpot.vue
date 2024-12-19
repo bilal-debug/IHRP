@@ -10,10 +10,12 @@ const buttons = [
   {
     name: "Partners",
     color: "bg-blue-500",
+    link: "/partners/registration/",
   },
   {
     name: "Public",
     color: "bg-green-500",
+    link: "/public/registration/",
   },
 ];
 </script>
