@@ -1,7 +1,6 @@
 <script setup>
-import { errorMessages } from "vue/compiler-sfc";
 import SubmitButton from "../buttons/SubmitButton.vue";
-import { ref, watch } from "vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 
 const rinfo = [
@@ -36,7 +35,15 @@ const handeSubmit = () => {
   } else {
     errorMessage.value = null;
 
-    router.push("/chokas");
+    if (
+      userSelectedOptions.value.title === "Certified Community - Individual"
+    ) {
+      router.push("/ihrp-certified-cummunity/registration/individual");
+    } else if (
+      userSelectedOptions.value.title === "Certified Community - 5 Passes"
+    ) {
+      router.push("/ihrp-certified-cummunity/registration/individual");
+    }
   }
 };
 </script>
@@ -44,14 +51,14 @@ const handeSubmit = () => {
   <div class="grid md:grid-cols-2 grid-cols-1">
     <div v-for="(rginfo, index) in rinfo" :key="index" class="mx-24">
       <div
-        class="flex justify-center gap-4 bg-orange-50 border border-orange-300 rounded-lg px-12 py-8 mt-6"
+        class="flex justify-start gap-4 bg-orange-50 border border-orange-300 rounded-lg md:px-12 py-8 mt-6"
       >
         <div class="">
           <input
             class="w-5 h-5 accent-[#ffa500] appearance-none border-2 border-gray-300 rounded-full checked:border-[#ffa500] checked:bg-[#ffa500]"
             type="radio"
             :value="rginfo"
-            name="Registration Card Radio"
+            name="userSelectedOptions"
             v-model="userSelectedOptions"
           />
         </div>

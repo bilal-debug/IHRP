@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const selected = ref(false);
-const errorMessage = ref("");
+
 const props = defineProps(["handeSubmit"]);
 </script>
 <template>
