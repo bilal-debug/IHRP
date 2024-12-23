@@ -6,6 +6,9 @@ import PartnersRegistration from '@/components/viewComponents/partners/registrat
 import PartnersIndividual from '@/components/viewComponents/partners/registration/individual/Individual.vue'
 import PublicRegistration from '@/components/viewComponents/public/registration/Registration.vue'
 import PublicIndividual from '@/components/viewComponents/public/registration/individual/Individual.vue'
+import Uncertifiied_Friend from '@/components/viewComponents/ihrpCertifiedCommunity/registration/uncertifiied_friend/Uncertifiied_Friend.vue'
+import Five_Passes from '@/components/viewComponents/ihrpCertifiedCommunity/registration/five_passes/Five_Passes.vue'
+import Ten_Passes from '@/components/viewComponents/ihrpCertifiedCommunity/registration/ten_passes/Ten_Passes.vue'
 
 
 const router = createRouter({
@@ -45,6 +48,21 @@ const router = createRouter({
       path: '/public/registration/individual',
       name: 'PublicIndividual',
       component: PublicIndividual,
+    },
+    {
+      path: '/ihrp-certified-cummunity/registration/uncertified-friend',
+      name: 'Uncertifiied_Friend',
+      component: Uncertifiied_Friend,
+    },
+    {
+      path: '/ihrp-certified-cummunity/registration/five-passes',
+      name: 'Five_Passes',
+      component:Five_Passes,
+    },
+    {
+      path: '/ihrp-certified-cummunity/registration/ten-passes',
+      name: 'Ten_Passes',
+      component:Ten_Passes,
     }
   ],
 })

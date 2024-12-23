@@ -1,4 +1,99 @@
-<script setup></script>
+<script setup>
+const companyName = ref("");
+const errorMessage = ref(null);
+const nameerrorMessage = ref("");
+const name = ref("");
+const designation = ref("");
+const designationerrorMessage = ref("");
+const email = ref("");
+const emailerrorMessage = ref("");
+const mobileNumber = ref("");
+const mnerrorMessage = ref("");
+const companyUEN = ref("");
+const uenerrorMessage = ref("");
+const sessions = ref(false);
+const sessionserrorMessage = ref("");
+const status = ref(false);
+const statuserrorMessage = ref("");
+const promo = ref("");
+
+const register = () => {
+  if (companyName.value === "") {
+    errorMessage.value = "This field is required";
+  } else {
+    errorMessage.value = null;
+  }
+
+  if (companyUEN.value === "") {
+    uenerrorMessage.value = "This field is required";
+  } else {
+    uenerrorMessage.value = null;
+  }
+  if (status.value === false) {
+    statuserrorMessage.value = "This field is required";
+  } else {
+    statuserrorMessage.value = null;
+  }
+  if (sessions.value === false) {
+    sessionserrorMessage.value = "This field is required";
+  } else {
+    sessionserrorMessage.value = null;
+  }
+
+  if (name.value === "") {
+    nameerrorMessage.value = "This field is required";
+  } else {
+    nameerrorMessage.value = null;
+  }
+  if (designation.value === "") {
+    designationerrorMessage.value = "This field is required";
+  } else {
+    designationerrorMessage.value = null;
+  }
+
+  if (email.value === "") {
+    emailerrorMessage.value = "Invalid Email Address";
+  } else {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
+      emailerrorMessage.value = "Invalid email format";
+    } else {
+      emailerrorMessage.value = null;
+    }
+  }
+  if (mobileNumber.value === "") {
+    mnerrorMessage.value = "This field is required";
+  } else {
+    mnerrorMessage.value = null;
+  }
+
+  data();
+};
+
+const data = () => {
+  if (
+    name.value !== "" &&
+    companyName.value !== "" &&
+    companyUEN.value !== "" &&
+    designation.value !== "" &&
+    status.value !== "" &&
+    email.value !== "" &&
+    mobileNumber.value !== "" &&
+    sessions.value !== "" &&
+    promo.value !== ""
+  ) {
+    console.log(name.value);
+    console.log(companyName.value);
+    console.log(companyUEN.value);
+    console.log(designation.value);
+    console.log(status.value);
+    console.log(email.value);
+    console.log(mobileNumber.value);
+    console.log(sessions.value);
+    console.log(promo.value);
+  }
+};
+</script>
 <template>
   <div>
     <p class="md:mx-24 mx-6 text-[24px] font-semibold text-gray-600 pb-5 mt-9">

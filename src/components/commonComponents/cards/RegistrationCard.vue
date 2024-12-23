@@ -40,9 +40,19 @@ const handeSubmit = () => {
     ) {
       router.push("/ihrp-certified-cummunity/registration/individual");
     } else if (
+      userSelectedOptions.value.title ===
+      "Certified Community - 1+1 Deal : Bring An Uncertified Friend"
+    ) {
+      router.push("/ihrp-certified-cummunity/registration/uncertified-friend");
+    } else if (
       userSelectedOptions.value.title === "Certified Community - 5 Passes"
     ) {
-      router.push("/ihrp-certified-cummunity/registration/individual");
+      router.push("/ihrp-certified-cummunity/registration/five-passes");
+    } else if (
+      userSelectedOptions.value.title ===
+      "Certified Community - 10 Passes (Per Table)"
+    ) {
+      router.push("/ihrp-certified-cummunity/registration/ten-passes");
     }
   }
 };
@@ -84,5 +94,5 @@ const handeSubmit = () => {
     </div>
   </div>
 
-  <SubmitButton :handeSubmit="handeSubmit" />
+  <SubmitButton :handeSubmit="handeSubmit" text="submit" />
 </template>

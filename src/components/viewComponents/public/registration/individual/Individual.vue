@@ -16,9 +16,9 @@ import RNavBar from "@/components/commonComponents/navbar/RNavBar.vue";
       Please Fill in Information Details
     </p>
   </div>
-
-  <IrhpForum />
-
+  <div class="md:mx-24 mx-6 md:mt-6 mt-5">
+    <IrhpForum />
+  </div>
   <div
     class="bg-no-repeat bg-gradient-to-b from-transparent to-blue-600"
     style="background-size: 100% 100%"

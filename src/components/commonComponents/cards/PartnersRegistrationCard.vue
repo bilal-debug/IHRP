@@ -81,5 +81,5 @@ const HandeSubmit = () => {
     </div>
   </div>
 
-  <SubmitButton :handeSubmit="HandeSubmit" />
+  <SubmitButton :handeSubmit="HandeSubmit" text="submit" />
 </template>
